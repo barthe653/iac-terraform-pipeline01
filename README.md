@@ -6,17 +6,17 @@
 # Activate SA
 gcloud auth activate-service-account <service-account> --key-file="/key-path"
 
-# Commandes Terraform
+# Commands Terraform
 terraform init
 terraform fmt -recursive
 terraform validate
-terraform plan -out=tfplan.out -var-file="terraform.tfvars"
+terraform plan -out=tfplan.out -var-file="terraform.tears"
 terraform apply tfplan.out
 
-AWS_ACCESS_KEY
-AWS_SECRET_ACCESS_KEY
+AWS_ACCESS_KEY 
+AWS_SECRET_ACCESS_KEY 
 
-az ad sp create-for-rbac --name multicloud-iac-aks --role="Contributor" --scopes="/subscriptions/<SUBCRIPTION_ID>" > rbac.json
+az ad sp create-for-rbac --name multicloud-iac-aks --role="Contributor" --scopes="/subscriptions/<SUBSCRIPTION_ID>" > rbac.json
 
 azure_subscription_id = ""
 azure_client_id = ""
